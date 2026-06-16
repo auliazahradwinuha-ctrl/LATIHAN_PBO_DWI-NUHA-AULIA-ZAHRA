@@ -1,5 +1,5 @@
 <?php
-require_once 'TiketReguler.php';
+require_once 'TiketRegular.php';
 require_once 'TiketVIP.php';
 
 $tiket1 = new TiketReguler(
@@ -27,7 +27,7 @@ $tiket2 = new TiketVIP(
 </head>
 <body>
 
-<h2>Tiket Reguler</h2>
+<h2>Tiket Regular</h2>
 <p>Total Harga: Rp <?= number_format($tiket1->hitungTotalHarga(), 0, ',', '.') ?></p>
 <?= $tiket1->tampilkanInfoFasilitas(); ?>
 
